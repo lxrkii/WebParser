@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  parser:
+    build: .
+    container_name: website_parser
+    restart: unless-stopped
+    volumes:
+      - .:/app 
